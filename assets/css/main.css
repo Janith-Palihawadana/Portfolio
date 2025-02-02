@@ -40,7 +40,7 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f4fafd;
+  --background-color:  #f9f9f9;
   --surface-color: #ffffff;
 }
 
@@ -1494,6 +1494,29 @@ section,
 
 .activity-description {
   font-size: 16px;
-  color: #555;
+  color: #bbb6b6;
   line-height: 1.6;
+}
+
+/* Custom CSS for Gradient and Icons */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-links a {
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #0d6efd !important;
 }
