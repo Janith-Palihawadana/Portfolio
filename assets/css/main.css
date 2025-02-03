@@ -1404,7 +1404,7 @@ section,
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
-  gap: 15px;
+  gap: 20px;
   max-width: 800px;
   width: 100%;
 }
@@ -1519,4 +1519,8 @@ section,
 
 .social-links a:hover {
   color: #0d6efd !important;
+}
+
+.justify-text {
+  text-align: justify;
 }
