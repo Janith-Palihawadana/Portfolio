@@ -227,3 +227,21 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+// Put your birthdate here (YYYY, MM-1, DD)
+const birthDate = new Date(1998, 9, 23); // Example: 15 July 1999 (month is 0-based)
+
+const today = new Date();
+let age = today.getFullYear() - birthDate.getFullYear();
+
+// Check if birthday has passed this year
+const hasBirthdayPassed =
+  today.getMonth() > birthDate.getMonth() ||
+  (today.getMonth() === birthDate.getMonth() && today.getDate() >= birthDate.getDate());
+
+if (!hasBirthdayPassed) {
+  age--
+}
+
+// Insert into span
+document.getElementById("age").textContent = age;
